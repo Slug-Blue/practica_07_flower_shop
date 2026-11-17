@@ -1,0 +1,11 @@
+auth/
+*.pgpass
+pgpass
+config.env
+.env
+*.pem
+*.key
+*.pfx
+*.docx
+*.pptx
+01_*.pdf

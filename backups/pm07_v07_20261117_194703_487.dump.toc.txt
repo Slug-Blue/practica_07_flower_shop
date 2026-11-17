@@ -1,0 +1,34 @@
+;
+; Archive created at 2026-11-17 19:47:03 MSK
+;     dbname: pm07_v07
+;     TOC Entries: 23
+;     Compression: gzip
+;     Dump Version: 1.15-0
+;     Format: CUSTOM
+;     Integer: 4 bytes
+;     Offset: 8 bytes
+;     Dumped from database version: 16.16 (Ubuntu 16.16-1.pgdg22.04+1)
+;     Dumped by pg_dump version: 16.16 (Ubuntu 16.16-1.pgdg22.04+1)
+;
+;
+; Selected TOC Entries:
+;
+3356; 0 0 ACL - SCHEMA public pg_database_owner
+218; 1259 16405 TABLE public access_probe admin
+3357; 0 0 ACL public TABLE access_probe admin
+217; 1259 16400 TABLE public appointments admin
+3358; 0 0 ACL public TABLE appointments admin
+215; 1259 16390 TABLE public clients admin
+3359; 0 0 ACL public TABLE clients admin
+216; 1259 16395 TABLE public masters admin
+3360; 0 0 ACL public TABLE masters admin
+3349; 0 16405 TABLE DATA public access_probe admin
+3348; 0 16400 TABLE DATA public appointments admin
+3346; 0 16390 TABLE DATA public clients admin
+3347; 0 16395 TABLE DATA public masters admin
+3202; 2606 16409 CONSTRAINT public access_probe access_probe_pkey admin
+3200; 2606 16404 CONSTRAINT public appointments appointments_pkey admin
+3196; 2606 16394 CONSTRAINT public clients clients_pkey admin
+3198; 2606 16399 CONSTRAINT public masters masters_pkey admin
+2050; 826 16411 DEFAULT ACL public DEFAULT PRIVILEGES FOR SEQUENCES admin
+2049; 826 16410 DEFAULT ACL public DEFAULT PRIVILEGES FOR TABLES admin

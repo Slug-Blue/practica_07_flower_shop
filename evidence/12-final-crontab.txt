@@ -1,0 +1,2 @@
+SHELL=/bin/bash
+0 3 * * * /bin/bash "$HOME/pm07/cron-entry.sh" >> "$HOME/pm07/logs/cron.log" 2>&1

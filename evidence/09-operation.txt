@@ -1,0 +1,27 @@
+run_task and configuration (password profile excluded)
+dump_db() {
+    "$DUMP" -w -h "$DB_HOST" -p "$DB_PORT" -U admin -d "$DB" \
+        -Fc -Z 6 -f "$1"
+}
+run_task() {
+    local file="$WORK/backups/${DB}_${STAMP}.dump"
+    dump_db "$file"
+    test -s "$file"
+    "$RESTORE" --list "$file" > "$file.toc.txt"
+    log INFO "custom_archive=$file"
+    # Individual addition: sidecar SHA-256 and immediate integrity check.
+    if [[ "$CHECKSUM" == "1" ]]; then
+        (cd -- "$(dirname -- "$file")" && sha256sum -- "$(basename -- "$file")" > "$(basename -- "$file").sha256")
+        (cd -- "$(dirname -- "$file")" && sha256sum --check -- "$(basename -- "$file").sha256") >> "$LOG" 2>&1
+        log INFO "checksum_verified=$file.sha256"
+    fi
+}
+log INFO "START db=$DB user=$(id -un) pid=$$"
+DB="pm07_v07"
+DB_HOST="127.0.0.1"
+DB_PORT="5432"
+CLIENT="/usr/lib/postgresql/16/bin/psql"
+DUMP="/usr/lib/postgresql/16/bin/pg_dump"
+RESTORE="/usr/lib/postgresql/16/bin/pg_restore"
+AUTH="$WORK/auth/pgpass"
+CHECKSUM="1"

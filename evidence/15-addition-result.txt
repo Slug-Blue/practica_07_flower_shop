@@ -1,0 +1,12 @@
+Addition CHECKSUM=1: SHA-256 sidecar and verification
+exit=0
+e007158736798e9fff16aa9e53626deca2ba7721c0e32d4ce2181c3023ab7c8a  pm07_v07_20261117_194703_510.dump
+pm07_v07_20261117_194703_510.dump: OK
+pm07_v07_20261117_194703_510.dump: FAILED
+sha256sum: WARNING: 1 computed checksum did NOT match
+corrupted_copy_check_exit=1
+2026-11-17T19:47:03+03:00 [INFO] START db=pm07_v07 user=student pid=510
+2026-11-17T19:47:03+03:00 [INFO] custom_archive=/home/student/pm07/backups/pm07_v07_20261117_194703_510.dump
+pm07_v07_20261117_194703_510.dump: OK
+2026-11-17T19:47:03+03:00 [INFO] checksum_verified=/home/student/pm07/backups/pm07_v07_20261117_194703_510.dump.sha256
+2026-11-17T19:47:03+03:00 [INFO] END result=OK

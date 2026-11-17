@@ -1,0 +1,5 @@
+2026-11-17T19:47:03+03:00
+uid=1000(student) gid=1000(student) groups=1000(student)
+SHELL=/bin/bash
+*/2 * * * * /bin/bash "$HOME/pm07/cron-entry.sh" >> "$HOME/pm07/logs/cron.log" 2>&1
+Expected: next even minute; actual trigger must be confirmed in syslog.

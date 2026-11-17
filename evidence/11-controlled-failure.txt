@@ -1,0 +1,5 @@
+Test copy: DB=pm07_v07_missing; valid shared password profile
+pg_dump: error: connection to server at "127.0.0.1", port 5432 failed: FATAL:  database "pm07_v07_missing" does not exist
+exit=1
+2026-11-17T19:42:48+03:00 [INFO] START db=pm07_v07_missing user=student pid=259
+2026-11-17T19:42:48+03:00 [ERROR] exit=1 line=17

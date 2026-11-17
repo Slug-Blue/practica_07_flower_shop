@@ -1,0 +1,281 @@
+- text: You are currently running version 9.14 of pgAdmin 4,
+- text: however the current version is 9.19.
+- text: Please click
+- link "here":
+  - /url: https://www.pgadmin.org/download/
+- text: for more information.
+- button "Close Message":
+- button "File":
+  - text: File
+- button "Object":
+  - text: Object
+- button "Tools":
+  - text: Tools
+- generic: ❯ ❯
+- button "Help":
+  - text: Help
+- button "Default Workspace":
+- button "Query Tool Workspace":
+- button "PSQL Tool Workspace":
+- generic "Schema Diff Workspace":
+  - button [disabled]:
+- button "Preferences":
+- tablist:
+  - tablist:
+    - tab "Object Explorer" [selected]:
+      - tab "Object Explorer" [selected]:
+        - generic "Object Explorer":
+          - generic: Object Explorer
+    - button "Filter Objects":
+    - button "Query Tool":
+    - generic "All Rows":
+      - button [disabled]:
+    - generic "Filtered Rows...":
+      - button [disabled]:
+    - button "Search Objects...":
+    - button "PSQL Tool":
+- tabpanel "Object Explorer":
+  - tabpanel:
+    - generic: 
+    - generic: Servers
+    - generic: 
+    - generic: Учебная практика
+    - generic: (1)
+    - generic: 
+    - generic: PM07 Variant 07 Ubuntu PostgreSQL16
+    - generic: 
+    - generic: Databases
+    - generic: (4)
+    - generic: 
+    - generic: pm07_v07
+    - generic: 
+    - generic: pm07_v07_restore
+    - generic: 
+    - generic: pm07_v07_restore2
+    - generic: 
+    - generic: postgres
+    - generic: 
+    - generic: Login/Group Roles
+    - generic: 
+    - generic: Tablespaces
+- tablist:
+  - tablist:
+    - tab "Dashboard Close":
+      - tab "Dashboard Close":
+        - generic "Dashboard":
+          - generic: Dashboard
+          - button "Close":
+    - tab "Properties Close":
+      - tab "Properties Close":
+        - generic "Properties":
+          - generic: Properties
+          - button "Close":
+    - tab "SQL Close":
+      - tab "SQL Close":
+        - generic "SQL":
+          - generic: SQL
+          - button "Close":
+    - tab "Statistics Close":
+      - tab "Statistics Close":
+        - generic "Statistics":
+          - generic: Statistics
+          - button "Close":
+    - tab "Dependencies Close":
+      - tab "Dependencies Close":
+        - generic "Dependencies":
+          - generic: Dependencies
+          - button "Close":
+    - tab "Dependents Close":
+      - tab "Dependents Close":
+        - generic "Dependents":
+          - generic: Dependents
+          - button "Close":
+    - tab "Processes Close":
+      - tab "Processes Close":
+        - generic "Processes":
+          - generic: Processes
+          - button "Close":
+    - tab " pm07_v07/readonly@PM07 Variant 07 Ubuntu PostgreSQL16* Close" [selected]:
+      - tab " pm07_v07/readonly@PM07 Variant 07 Ubuntu PostgreSQL16* Close" [selected]:
+        - generic "Query Tool - pm07_v07/readonly@PM07 Variant 07 Ubuntu PostgreSQL16*":
+          - generic: 
+          - generic: pm07_v07/readonly@PM07 Variant 07 Ubuntu PostgreSQL16*
+          - button "Close":
+    - button:
+    - button "More":
+- text: ": : : : : : : : : : : : : : : : : :"
+- tabpanel " pm07_v07/readonly@PM07 Variant 07 Ubuntu PostgreSQL16* Close":
+  - tabpanel
+- iframe [active] [id="id-query-tool_4623740"]:
+  - button "The session is idle and there is no current transaction.":
+  - button "pm07_v07/readonly@PM07 Variant 07 Ubuntu PostgreSQL16":
+    - generic: pm07_v07/readonly@PM07 Variant 07 Ubuntu PostgreSQL16
+  - button "New query tool for current connection":
+  - button "Reset layout":
+  - button "Open File":
+  - button "Open in a new tab":
+  - button "Save File":
+  - button "File":
+  - button "Edit":
+  - generic "Sort/Filter":
+    - button [disabled]:
+  - generic "Filter options":
+    - button [disabled]:
+  - combobox [disabled]:
+    - option "No limit" [selected]
+    - option "1000 rows"
+    - option "500 rows"
+    - option "100 rows"
+  - generic "Cancel query":
+    - button [disabled]:
+  - button "Execute script F5":
+  - button "Execute query":
+  - button "Execute options":
+  - button "Explain":
+  - button "Explain Analyze":
+  - button "Explain Settings":
+  - generic "Commit":
+    - button [disabled]:
+  - generic "Rollback":
+    - button [disabled]:
+  - button "Macros":
+  - button "Help":
+  - generic: ❯
+  - tablist:
+    - tablist:
+      - tab "Query" [selected]:
+        - tab "Query" [selected]:
+          - generic "Query":
+            - generic: Query
+      - tab "Query History":
+        - tab "Query History":
+          - generic "Query History":
+            - generic: Query History
+      - button "Maximise":
+  - tabpanel "Query":
+    - tabpanel:
+      - generic: "1"
+      - textbox:
+        - generic: SELECT current_user, current_database(), 'clients' AS table_name, COUNT(*) AS row_count, SUM(id) AS id_sum, SUM(amount) AS amount_sum FROM clients UNION ALL SELECT current_user,current_database(),'masters',COUNT(*),SUM(id),SUM(amount) FROM masters UNION ALL SELECT current_user,current_database(),'appointments',COUNT(*),SUM(id),SUM(amount) FROM appointments;
+  - tablist:
+    - tablist:
+      - tab "Scratch Pad Close" [selected]:
+        - tab "Scratch Pad Close" [selected]:
+          - generic "Scratch Pad":
+            - generic: Scratch Pad
+            - button "Close":
+      - button "Maximise":
+  - tabpanel "Scratch Pad Close":
+    - tabpanel:
+      - textbox "Scratch Pad"
+  - tablist:
+    - tablist:
+      - tab "Data Output" [selected]:
+        - tab "Data Output" [selected]:
+          - generic "Data Output":
+            - generic: Data Output
+      - tab "Messages":
+        - tab "Messages":
+          - generic "Messages":
+            - generic: Messages
+      - tab "Notifications":
+        - tab "Notifications":
+          - generic "Notifications":
+            - generic: Notifications
+      - button "Maximise":
+  - tabpanel "Data Output":
+    - tabpanel:
+      - generic "Add row":
+        - button [disabled]:
+      - generic "Copy":
+        - button [disabled]:
+      - button "Copy options":
+      - generic "Paste":
+        - button [disabled]:
+      - button "Paste options":
+      - generic "Delete":
+        - button [disabled]:
+      - generic "Save Data Changes":
+        - button [disabled]:
+      - button "Save results to file":
+      - button "Graph Visualiser":
+      - button "SQL query of data":
+      - generic: "Showing rows: 1 to 3"
+      - button "Edit range":
+      - generic "Show entire range":
+        - button [disabled]:
+      - generic: "Page No:"
+      - textbox
+      - generic: of 1
+      - generic "First Page":
+        - button [disabled]:
+      - generic "Previous Page":
+        - button [disabled]:
+      - generic "Next Page":
+        - button [disabled]:
+      - generic "Last Page":
+        - button [disabled]:
+      - grid:
+        - row "current_user name current_database name table_name text row_count bigint id_sum bigint amount_sum numeric":
+          - columnheader
+          - columnheader "current_user name":
+            - text: current_user
+            - text: name
+          - columnheader "current_database name":
+            - text: current_database
+            - text: name
+          - columnheader "table_name text":
+            - text: table_name
+            - text: text
+          - columnheader "row_count bigint":
+            - text: row_count
+            - text: bigint
+          - columnheader "id_sum bigint":
+            - text: id_sum
+            - text: bigint
+          - columnheader "amount_sum numeric":
+            - text: amount_sum
+            - text: numeric
+        - row "1 readonly pm07_v07 clients 4 10 100.00":
+          - gridcell "1":
+            - generic: "1"
+          - gridcell "readonly"
+          - gridcell "pm07_v07"
+          - gridcell "clients"
+          - gridcell "4":
+            - generic: "4"
+          - gridcell "10":
+            - generic: "10"
+          - gridcell "100.00":
+            - generic: "100.00"
+        - row "2 readonly pm07_v07 masters 4 10 100.00":
+          - gridcell "2":
+            - generic: "2"
+          - gridcell "readonly"
+          - gridcell "pm07_v07"
+          - gridcell "masters"
+          - gridcell "4":
+            - generic: "4"
+          - gridcell "10":
+            - generic: "10"
+          - gridcell "100.00":
+            - generic: "100.00"
+        - row "3 readonly pm07_v07 appointments 4 10 100.00":
+          - gridcell "3":
+            - generic: "3"
+          - gridcell "readonly"
+          - gridcell "pm07_v07"
+          - gridcell "appointments"
+          - gridcell "4":
+            - generic: "4"
+          - gridcell "10":
+            - generic: "10"
+          - gridcell "100.00":
+            - generic: "100.00"
+  - generic: "Total rows: 3"
+  - generic: Query complete 00:00:00.051
+  - generic "Select EOL Sequence": CRLF
+  - generic: Ln 1, Col 360
+  - tooltip "Execute script F5":
+    - generic: Execute script
+    - generic: F5

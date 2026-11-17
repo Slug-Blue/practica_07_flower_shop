@@ -1,0 +1,24 @@
+2026-11-17T19:49:23+03:00
+Scheduled CMD from the system log (not manual execution):
+Nov 17 19:48:01 14136280233b CRON[582]: (student) CMD (/bin/bash "$HOME/pm07/cron-entry.sh" >> "$HOME/pm07/logs/cron.log" 2>&1)
+Scheduler return code:
+2026-11-17T19:48:02+03:00 user=student run_exit=0
+Matching run log:
+2026-11-17T19:48:01+03:00 [INFO] START db=pm07_v07 user=student pid=586
+2026-11-17T19:48:02+03:00 [INFO] custom_archive=/home/student/pm07/backups/pm07_v07_20261117_194801_586.dump
+pm07_v07_20261117_194801_586.dump: OK
+2026-11-17T19:48:02+03:00 [INFO] checksum_verified=/home/student/pm07/backups/pm07_v07_20261117_194801_586.dump.sha256
+2026-11-17T19:48:02+03:00 [INFO] END result=OK
+-rw------- 1 student student 6860 Nov 17 19:48 backups/pm07_v07_20261117_194801_586.dump
+Archive format and compression:
+;
+; Archive created at 2026-11-17 19:48:01 MSK
+;     dbname: pm07_v07
+;     TOC Entries: 23
+;     Compression: gzip
+;     Dump Version: 1.15-0
+;     Format: CUSTOM
+;     Integer: 4 bytes
+;     Offset: 8 bytes
+;     Dumped from database version: 16.16 (Ubuntu 16.16-1.pgdg22.04+1)
+;     Dumped by pg_dump version: 16.16 (Ubuntu 16.16-1.pgdg22.04+1)

@@ -1,0 +1,35 @@
+2026-11-17T19:42:03+03:00
+bash ./run.sh
+exit=0
+2026-11-17T19:42:03+03:00 [INFO] START db=pm07_v07 user=student pid=175
+2026-11-17T19:42:03+03:00 [INFO] custom_archive=/home/student/pm07/backups/pm07_v07_20261117_194203_175.dump
+pm07_v07_20261117_194203_175.dump: OK
+2026-11-17T19:42:03+03:00 [INFO] checksum_verified=/home/student/pm07/backups/pm07_v07_20261117_194203_175.dump.sha256
+2026-11-17T19:42:03+03:00 [INFO] END result=OK
+pm07_v07_20261117_194203_175.dump 6860 bytes
+;
+; Archive created at 2026-11-17 19:42:03 MSK
+;     dbname: pm07_v07
+;     TOC Entries: 23
+;     Compression: gzip
+;     Dump Version: 1.15-0
+;     Format: CUSTOM
+;     Integer: 4 bytes
+;     Offset: 8 bytes
+;     Dumped from database version: 16.16 (Ubuntu 16.16-1.pgdg22.04+1)
+;     Dumped by pg_dump version: 16.16 (Ubuntu 16.16-1.pgdg22.04+1)
+;
+;
+; Selected TOC Entries:
+;
+3356; 0 0 ACL - SCHEMA public pg_database_owner
+218; 1259 16405 TABLE public access_probe admin
+3357; 0 0 ACL public TABLE access_probe admin
+Restore exact automatic archive to a separate empty database pm07_v07_restore2
+  table_name  | count | sum |  sum   
+--------------+-------+-----+--------
+ clients      |     4 |  10 | 100.00
+ masters      |     4 |  10 | 100.00
+ appointments |     4 |  10 | 100.00
+(3 rows)
+

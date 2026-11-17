@@ -1,0 +1,5 @@
+Baseline CHECKSUM=0
+exit=0
+-rw------- 1 student student 6860 Nov 17 19:47 backups/pm07_v07_20261117_194703_487.dump
+-rw------- 1 student student 1389 Nov 17 19:47 backups/pm07_v07_20261117_194703_487.dump.toc.txt
+No checksum sidecar for this baseline archive

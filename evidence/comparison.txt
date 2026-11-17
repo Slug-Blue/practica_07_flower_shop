@@ -1,0 +1,1 @@
+COMPARE_OK: aggregates, full id=1 rows and access_probe match in source, restore, restore2.

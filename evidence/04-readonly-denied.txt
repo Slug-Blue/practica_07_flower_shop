@@ -1,0 +1,16 @@
+ROLE=readonly SQL=INSERT INTO access_probe VALUES(2,20);
+ current_user 
+--------------
+ readonly
+(1 row)
+
+ERROR:  permission denied for table access_probe
+exit=1 (expected nonzero: permission denied)
+ROLE=readonly SQL=DELETE FROM access_probe WHERE id=1;
+ current_user 
+--------------
+ readonly
+(1 row)
+
+ERROR:  permission denied for table access_probe
+exit=1 (expected nonzero: permission denied)

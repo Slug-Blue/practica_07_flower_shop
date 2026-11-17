@@ -1,0 +1,19 @@
+ROLE=app_user SQL=CREATE TABLE forbidden_app(id int);
+ current_user 
+--------------
+ app_user
+(1 row)
+
+ERROR:  permission denied for schema public
+LINE 1: SELECT current_user; CREATE TABLE forbidden_app(id int);
+                                          ^
+exit=1 (expected nonzero: permission denied)
+ROLE=app_user SQL=CREATE ROLE forbidden_probe LOGIN;
+ current_user 
+--------------
+ app_user
+(1 row)
+
+ERROR:  permission denied to create role
+DETAIL:  Only roles with the CREATEROLE attribute may create roles.
+exit=1 (expected nonzero: permission denied)
